@@ -61,13 +61,15 @@ export default function Header() {
             </svg>
             Se connecter
           </Link>
-          <Link
-            href="/#contact"
+          <a
+            href="https://calendly.com/amazonlegacy-forma/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-all duration-200 hover:opacity-90 hover:shadow-lg active:scale-95"
             style={{ backgroundColor: "#FF6B35" }}
           >
             Consultation gratuite
-          </Link>
+          </a>
         </div>
       </div>
     </header>

@@ -244,12 +244,15 @@ export default function Home() {
               placeholder="Ton adresse email"
               className="flex-1 px-5 py-4 rounded-xl text-gray-900 placeholder-gray-500 text-base outline-none focus:ring-4 focus:ring-white/40 bg-white border-2 border-white"
             />
-            <button
+            <a
+              href="https://calendly.com/amazonlegacy-forma/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-7 py-4 rounded-xl bg-white font-semibold text-base transition-all duration-200 hover:bg-orange-50 hover:shadow-xl hover:-translate-y-0.5 active:scale-95 whitespace-nowrap"
               style={{ color: "#FF6B35" }}
             >
               Consultation gratuite
-            </button>
+            </a>
           </div>
         </div>
       </section>

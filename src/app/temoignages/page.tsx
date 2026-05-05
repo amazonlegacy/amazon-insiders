@@ -260,12 +260,14 @@ export default function TemoignagesPage() {
             >
               Voir la formation
             </Link>
-            <Link
-              href="/contact"
+            <a
+              href="https://calendly.com/amazonlegacy-forma/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 rounded-xl border-2 border-white font-bold text-base text-white transition-all duration-200 hover:bg-white/15 hover:-translate-y-0.5 active:scale-95"
             >
               Consultation gratuite
-            </Link>
+            </a>
           </div>
         </div>
       </section>
