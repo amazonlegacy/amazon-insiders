@@ -160,7 +160,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-12">
             <a
-              href="#contact"
+              href="/formation#tarif"
               className="inline-flex items-center px-8 py-4 rounded-xl text-white font-semibold text-base transition-all duration-200 hover:opacity-90 hover:shadow-2xl hover:-translate-y-0.5 active:scale-95"
               style={{ backgroundColor: "#FF6B35" }}
             >
