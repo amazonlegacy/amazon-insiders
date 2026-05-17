@@ -16,104 +16,170 @@ export default function Home() {
         {/* ── Decorative background illustrations ── */}
         <div className="absolute inset-0 pointer-events-none select-none" aria-hidden="true">
 
-          {/* Package / FBA box — top-left */}
-          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "12%", left: "6%", opacity: 0.10, transform: "rotate(-12deg)" }}>
-            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><line x1="12" y1="22" x2="12" y2="12"/>
+          {/* ── Isometric 3D Box — top-left ── */}
+          <svg width="68" height="68" viewBox="0 0 48 48" fill="none" stroke="#FF6B35" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "9%", left: "4%", opacity: 0.12, transform: "rotate(-10deg)" }}>
+            <path d="M24 4L44 14L24 24L4 14Z" fill="#FF6B35" fillOpacity="0.10"/>
+            <path d="M4 14L24 24L24 44L4 34Z" fill="#FF6B35" fillOpacity="0.06"/>
+            <path d="M24 24L44 14L44 34L24 44Z" fill="#FF6B35" fillOpacity="0.08"/>
+            <line x1="24" y1="4" x2="24" y2="24" strokeOpacity="0.5"/>
+            <line x1="4" y1="14" x2="44" y2="14" strokeOpacity="0.3"/>
+            <line x1="14" y1="9" x2="14" y2="29" strokeOpacity="0.25" strokeWidth="0.8"/>
+            <line x1="34" y1="9" x2="34" y2="29" strokeOpacity="0.25" strokeWidth="0.8"/>
           </svg>
 
-          {/* Package small — far left mid */}
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "70%", left: "1%", opacity: 0.07, transform: "rotate(8deg)" }}>
-            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><line x1="12" y1="22" x2="12" y2="12"/>
+          {/* ── Isometric 3D Box small — bottom-left ── */}
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="#FF6B35" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "68%", left: "1%", opacity: 0.07, transform: "rotate(8deg)" }}>
+            <path d="M24 4L44 14L24 24L4 14Z" fill="#FF6B35" fillOpacity="0.10"/>
+            <path d="M4 14L24 24L24 44L4 34Z" fill="#FF6B35" fillOpacity="0.06"/>
+            <path d="M24 24L44 14L44 34L24 44Z" fill="#FF6B35" fillOpacity="0.08"/>
+            <line x1="24" y1="4" x2="24" y2="24" strokeOpacity="0.5"/>
           </svg>
 
-          {/* Shopping cart — top-right */}
-          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "8%", right: "8%", opacity: 0.09, transform: "rotate(10deg)" }}>
-            <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+          {/* ── Dollar coin badge — bottom-left ── */}
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" className="absolute" style={{ bottom: "12%", left: "7%", opacity: 0.12, transform: "rotate(-9deg)" }}>
+            <circle cx="30" cy="30" r="28" stroke="#FF6B35" strokeWidth="1.8"/>
+            <circle cx="30" cy="30" r="22" stroke="#FF6B35" strokeWidth="0.7" strokeDasharray="3 3"/>
+            <line x1="30" y1="12" x2="30" y2="48" stroke="#FF6B35" strokeWidth="1.4"/>
+            <path d="M37 19H25.5a5.5 5.5 0 0 0 0 11H35a5.5 5.5 0 0 1 0 11H22" stroke="#FF6B35" strokeWidth="1.6" strokeLinecap="round" fill="none"/>
           </svg>
 
-          {/* Shopping cart small — bottom center-left */}
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "8%", left: "22%", opacity: 0.07, transform: "rotate(-6deg)" }}>
-            <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+          {/* ── Dollar coin small — center-left ── */}
+          <svg width="36" height="36" viewBox="0 0 60 60" fill="none" className="absolute" style={{ top: "34%", left: "8%", opacity: 0.07, transform: "rotate(13deg)" }}>
+            <circle cx="30" cy="30" r="28" stroke="#FF6B35" strokeWidth="1.8"/>
+            <line x1="30" y1="12" x2="30" y2="48" stroke="#FF6B35" strokeWidth="1.4"/>
+            <path d="M37 19H25.5a5.5 5.5 0 0 0 0 11H35a5.5 5.5 0 0 1 0 11H22" stroke="#FF6B35" strokeWidth="1.6" strokeLinecap="round" fill="none"/>
           </svg>
 
-          {/* Bar chart — mid-left */}
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "52%", left: "3%", opacity: 0.08, transform: "rotate(6deg)" }}>
-            <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/>
+          {/* ── Pound coin badge — mid-right ── */}
+          <svg width="56" height="56" viewBox="0 0 60 60" fill="none" className="absolute" style={{ top: "50%", right: "8%", opacity: 0.11, transform: "rotate(-7deg)" }}>
+            <circle cx="30" cy="30" r="28" stroke="#FF6B35" strokeWidth="1.8"/>
+            <circle cx="30" cy="30" r="22" stroke="#FF6B35" strokeWidth="0.7" strokeDasharray="3 3"/>
+            <path d="M36 42H22M22 42v-2a8 8 0 0 1 8-8v0a6 6 0 0 0 6-6v-2a6 6 0 0 0-10-4.47" stroke="#FF6B35" strokeWidth="1.6" strokeLinecap="round" fill="none"/>
           </svg>
 
-          {/* Trending arrow up — right side */}
-          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "38%", right: "5%", opacity: 0.09, transform: "rotate(-8deg)" }}>
-            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>
+          {/* ── Pound coin small — bottom center-right ── */}
+          <svg width="34" height="34" viewBox="0 0 60 60" fill="none" className="absolute" style={{ bottom: "22%", right: "21%", opacity: 0.07, transform: "rotate(9deg)" }}>
+            <circle cx="30" cy="30" r="28" stroke="#FF6B35" strokeWidth="1.8"/>
+            <path d="M36 42H22M22 42v-2a8 8 0 0 1 8-8v0a6 6 0 0 0 6-6v-2a6 6 0 0 0-10-4.47" stroke="#FF6B35" strokeWidth="1.6" strokeLinecap="round" fill="none"/>
           </svg>
 
-          {/* Trending arrow small — top center */}
-          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "10%", left: "42%", opacity: 0.07, transform: "rotate(5deg)" }}>
-            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>
+          {/* ── Euro coin badge — top-right ── */}
+          <svg width="54" height="54" viewBox="0 0 60 60" fill="none" className="absolute" style={{ top: "12%", right: "6%", opacity: 0.10, transform: "rotate(-13deg)" }}>
+            <circle cx="30" cy="30" r="28" stroke="#FF6B35" strokeWidth="1.8"/>
+            <circle cx="30" cy="30" r="22" stroke="#FF6B35" strokeWidth="0.7" strokeDasharray="3 3"/>
+            <path d="M42 20a14 14 0 1 0 0 20M16 27h16M16 33h16" stroke="#FF6B35" strokeWidth="1.6" strokeLinecap="round" fill="none"/>
           </svg>
 
-          {/* Dollar sign — bottom-left */}
-          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "14%", left: "9%", opacity: 0.10, transform: "rotate(-10deg)" }}>
-            <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          {/* ── Euro coin small — top far-left ── */}
+          <svg width="34" height="34" viewBox="0 0 60 60" fill="none" className="absolute" style={{ top: "42%", left: "19%", opacity: 0.06, transform: "rotate(-8deg)" }}>
+            <circle cx="30" cy="30" r="28" stroke="#FF6B35" strokeWidth="1.8"/>
+            <path d="M42 20a14 14 0 1 0 0 20M16 27h16M16 33h16" stroke="#FF6B35" strokeWidth="1.6" strokeLinecap="round" fill="none"/>
           </svg>
 
-          {/* Dollar sign small — top left area */}
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "35%", left: "8%", opacity: 0.07, transform: "rotate(14deg)" }}>
-            <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          {/* ── Area line chart — mid-left ── */}
+          <svg width="70" height="52" viewBox="0 0 70 52" fill="none" stroke="#FF6B35" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "50%", left: "1%", opacity: 0.10, transform: "rotate(3deg)" }}>
+            <path d="M5 42 C12 42 14 32 20 28 C26 24 28 34 34 26 C40 18 44 22 50 12 C56 4 62 8 65 6" fill="none"/>
+            <path d="M5 42 C12 42 14 32 20 28 C26 24 28 34 34 26 C40 18 44 22 50 12 C56 4 62 8 65 6 L65 48 L5 48 Z" fill="#FF6B35" fillOpacity="0.07" stroke="none"/>
+            <line x1="3" y1="48" x2="67" y2="48" strokeWidth="1.2"/>
+            <circle cx="65" cy="6" r="3" fill="#FF6B35" fillOpacity="0.35" stroke="#FF6B35" strokeWidth="1.3"/>
+            <circle cx="34" cy="26" r="2.2" fill="#FF6B35" fillOpacity="0.25" stroke="#FF6B35" strokeWidth="1"/>
+            <circle cx="20" cy="28" r="2.2" fill="#FF6B35" fillOpacity="0.25" stroke="#FF6B35" strokeWidth="1"/>
           </svg>
 
-          {/* Pound £ sign — mid-right */}
-          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "55%", right: "10%", opacity: 0.09, transform: "rotate(-6deg)" }}>
-            <text x="4" y="19" fontFamily="serif" fontSize="18" stroke="#FF6B35" strokeWidth="0.8" fill="none">£</text>
+          {/* ── Rounded bar chart — bottom-left ── */}
+          <svg width="54" height="54" viewBox="0 0 32 32" fill="none" stroke="#FF6B35" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "28%", left: "1%", opacity: 0.09, transform: "rotate(4deg)" }}>
+            <rect x="2" y="14" width="5" height="14" rx="1.5" fill="#FF6B35" fillOpacity="0.12"/>
+            <rect x="9" y="8" width="5" height="20" rx="1.5" fill="#FF6B35" fillOpacity="0.12"/>
+            <rect x="16" y="11" width="5" height="17" rx="1.5" fill="#FF6B35" fillOpacity="0.12"/>
+            <rect x="23" y="4" width="5" height="24" rx="1.5" fill="#FF6B35" fillOpacity="0.12"/>
+            <line x1="0" y1="29" x2="32" y2="29" strokeWidth="1.2"/>
           </svg>
 
-          {/* Pound £ sign small — bottom center-right */}
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "20%", right: "24%", opacity: 0.07, transform: "rotate(10deg)" }}>
-            <text x="4" y="19" fontFamily="serif" fontSize="18" stroke="#FF6B35" strokeWidth="0.8" fill="none">£</text>
+          {/* ── Shopping cart detailed — top-right area ── */}
+          <svg width="56" height="56" viewBox="0 0 32 32" fill="none" stroke="#FF6B35" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "5%", right: "17%", opacity: 0.10, transform: "rotate(7deg)" }}>
+            <path d="M1 2h4l3.5 16h16l3-10H8" fill="none"/>
+            <rect x="10" y="20" width="12" height="6" rx="1" fill="#FF6B35" fillOpacity="0.08"/>
+            <circle cx="12" cy="28.5" r="2" fill="#FF6B35" fillOpacity="0.2" stroke="#FF6B35" strokeWidth="1.2"/>
+            <circle cx="22" cy="28.5" r="2" fill="#FF6B35" fillOpacity="0.2" stroke="#FF6B35" strokeWidth="1.2"/>
+            <line x1="13" y1="12" x2="13" y2="18" strokeOpacity="0.4" strokeWidth="0.8"/>
+            <line x1="19" y1="12" x2="19" y2="18" strokeOpacity="0.4" strokeWidth="0.8"/>
           </svg>
 
-          {/* Tag / price label — top center-right */}
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "18%", right: "22%", opacity: 0.07, transform: "rotate(-18deg)" }}>
-            <path d="M12 2H2v10l9.29 9.29a1 1 0 0 0 1.41 0l7.3-7.3a1 1 0 0 0 0-1.41z"/><circle cx="7" cy="7" r="1.5"/>
+          {/* ── Target / bullseye — top-center ── */}
+          <svg width="50" height="50" viewBox="0 0 32 32" fill="none" stroke="#FF6B35" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "7%", left: "38%", opacity: 0.08, transform: "rotate(-4deg)" }}>
+            <circle cx="16" cy="16" r="14"/>
+            <circle cx="16" cy="16" r="9" fill="#FF6B35" fillOpacity="0.04"/>
+            <circle cx="16" cy="16" r="5" fill="#FF6B35" fillOpacity="0.07"/>
+            <circle cx="16" cy="16" r="2" fill="#FF6B35" fillOpacity="0.20"/>
+            <line x1="30" y1="16" x2="23" y2="16" strokeWidth="1.6"/>
+            <line x1="2" y1="16" x2="9" y2="16" strokeWidth="1.6"/>
+            <line x1="16" y1="2" x2="16" y2="9" strokeWidth="1.6"/>
           </svg>
 
-          {/* Megaphone / ads — bottom-right */}
-          <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "10%", right: "7%", opacity: 0.09, transform: "rotate(8deg)" }}>
-            <path d="M3 11l19-9-9 19-2-8-8-2z"/>
+          {/* ── Trending arrow with dots — right side ── */}
+          <svg width="62" height="62" viewBox="0 0 32 32" fill="none" stroke="#FF6B35" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "35%", right: "3%", opacity: 0.10, transform: "rotate(-7deg)" }}>
+            <polyline points="2 24 10 16 16 20 24 10 30 6"/>
+            <polyline points="24 6 30 6 30 12"/>
+            <circle cx="10" cy="16" r="2" fill="#FF6B35" fillOpacity="0.30" stroke="#FF6B35" strokeWidth="1"/>
+            <circle cx="16" cy="20" r="2" fill="#FF6B35" fillOpacity="0.30" stroke="#FF6B35" strokeWidth="1"/>
+            <circle cx="24" cy="10" r="2" fill="#FF6B35" fillOpacity="0.30" stroke="#FF6B35" strokeWidth="1"/>
+            <circle cx="30" cy="6" r="2.5" fill="#FF6B35" fillOpacity="0.40" stroke="#FF6B35" strokeWidth="1.2"/>
           </svg>
 
-          {/* Search / SEO — top center-left */}
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "28%", left: "14%", opacity: 0.07, transform: "rotate(-5deg)" }}>
-            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          {/* ── Price tag — top center-right ── */}
+          <svg width="46" height="46" viewBox="0 0 32 32" fill="none" stroke="#FF6B35" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "18%", right: "26%", opacity: 0.08, transform: "rotate(-16deg)" }}>
+            <path d="M16 2H2v14l12.59 12.59a2 2 0 002.82 0l9.18-9.18a2 2 0 000-2.82Z" fill="#FF6B35" fillOpacity="0.07"/>
+            <circle cx="9" cy="9" r="2.5" fill="#FF6B35" fillOpacity="0.25" stroke="#FF6B35" strokeWidth="1.2"/>
+            <line x1="16" y1="10" x2="24" y2="18" strokeOpacity="0.35" strokeWidth="0.9"/>
+            <line x1="12" y1="14" x2="20" y2="22" strokeOpacity="0.35" strokeWidth="0.9"/>
           </svg>
 
-          {/* Search small — bottom far right */}
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "30%", right: "2%", opacity: 0.07, transform: "rotate(12deg)" }}>
-            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          {/* ── Megaphone with waves — bottom-right ── */}
+          <svg width="58" height="58" viewBox="0 0 32 32" fill="none" stroke="#FF6B35" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "8%", right: "5%", opacity: 0.10, transform: "rotate(6deg)" }}>
+            <polygon points="14 8 7 12 3 12 3 20 7 20 14 24" fill="#FF6B35" fillOpacity="0.08"/>
+            <path d="M14 8L28 3v26L14 24"/>
+            <path d="M25 10a8 8 0 010 12" strokeWidth="1.5"/>
+            <path d="M22 13a4 4 0 010 6" strokeWidth="1.4"/>
+            <line x1="7" y1="20" x2="5" y2="28" strokeOpacity="0.5"/>
           </svg>
 
-          {/* Truck / logistics — bottom center */}
-          <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "16%", left: "38%", opacity: 0.07, transform: "rotate(-3deg)" }}>
-            <rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+          {/* ── Search with crosshair — center-left ── */}
+          <svg width="44" height="44" viewBox="0 0 32 32" fill="none" stroke="#FF6B35" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "26%", left: "12%", opacity: 0.08, transform: "rotate(-5deg)" }}>
+            <circle cx="14" cy="14" r="11" fill="#FF6B35" fillOpacity="0.05"/>
+            <line x1="22.8" y1="22.8" x2="29" y2="29" strokeWidth="2.2"/>
+            <line x1="9" y1="14" x2="19" y2="14" strokeOpacity="0.6"/>
+            <line x1="14" y1="9" x2="14" y2="19" strokeOpacity="0.6"/>
+            <circle cx="14" cy="14" r="3.5" fill="#FF6B35" fillOpacity="0.12"/>
           </svg>
 
-          {/* Euro / revenue — mid-right top */}
-          <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "22%", right: "4%", opacity: 0.08, transform: "rotate(12deg)" }}>
-            <path d="M4 10h12M4 14h12M19 6a7 7 0 1 0 0 12 7 7 0 0 0 0-12Z"/>
+          {/* ── Truck detailed — bottom-center ── */}
+          <svg width="62" height="62" viewBox="0 0 48 36" fill="none" stroke="#FF6B35" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "13%", left: "37%", opacity: 0.08, transform: "rotate(-2deg)" }}>
+            <rect x="1" y="3" width="28" height="22" rx="2" fill="#FF6B35" fillOpacity="0.05"/>
+            <path d="M29 9h9l8 10v7H29V9Z" fill="#FF6B35" fillOpacity="0.07"/>
+            <line x1="29" y1="16" x2="46" y2="16" strokeOpacity="0.4"/>
+            <circle cx="9" cy="30" r="4.5" fill="#FF6B35" fillOpacity="0.10" stroke="#FF6B35" strokeWidth="1.3"/>
+            <circle cx="9" cy="30" r="1.5" fill="#FF6B35" fillOpacity="0.30"/>
+            <circle cx="36" cy="30" r="4.5" fill="#FF6B35" fillOpacity="0.10" stroke="#FF6B35" strokeWidth="1.3"/>
+            <circle cx="36" cy="30" r="1.5" fill="#FF6B35" fillOpacity="0.30"/>
+            <line x1="14" y1="30" x2="31" y2="30"/>
+            <line x1="8" y1="12" x2="22" y2="12" strokeOpacity="0.3" strokeWidth="0.8"/>
           </svg>
 
-          {/* Euro small — top far left */}
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "42%", left: "20%", opacity: 0.06, transform: "rotate(-9deg)" }}>
-            <path d="M4 10h12M4 14h12M19 6a7 7 0 1 0 0 12 7 7 0 0 0 0-12Z"/>
+          {/* ── Pie chart with segment — top-right mid ── */}
+          <svg width="44" height="44" viewBox="0 0 32 32" fill="none" stroke="#FF6B35" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "28%", right: "14%", opacity: 0.08, transform: "rotate(6deg)" }}>
+            <circle cx="16" cy="16" r="13"/>
+            <path d="M16 3 A13 13 0 0 1 29 16 L16 16 Z" fill="#FF6B35" fillOpacity="0.15"/>
+            <path d="M16 3 A13 13 0 0 1 29 16" strokeWidth="1.6"/>
+            <line x1="16" y1="3" x2="16" y2="16" strokeWidth="1.2"/>
+            <line x1="29" y1="16" x2="16" y2="16" strokeWidth="1.2"/>
           </svg>
 
-          {/* Pie chart — top right area */}
-          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "30%", right: "16%", opacity: 0.07, transform: "rotate(5deg)" }}>
-            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/>
-          </svg>
-
-          {/* Wifi / signal (ads reach) — bottom left far */}
-          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "28%", left: "29%", opacity: 0.06, transform: "rotate(-15deg)" }}>
-            <path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="#FF6B35"/>
+          {/* ── Pie chart small — bottom far-right ── */}
+          <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#FF6B35" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "30%", right: "2%", opacity: 0.07, transform: "rotate(-11deg)" }}>
+            <circle cx="16" cy="16" r="13"/>
+            <path d="M16 3 A13 13 0 0 1 29 16 L16 16 Z" fill="#FF6B35" fillOpacity="0.15"/>
+            <line x1="16" y1="3" x2="16" y2="16" strokeWidth="1.2"/>
+            <line x1="29" y1="16" x2="16" y2="16" strokeWidth="1.2"/>
           </svg>
 
         </div>
