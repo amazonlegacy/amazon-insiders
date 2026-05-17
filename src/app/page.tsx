@@ -21,8 +21,18 @@ export default function Home() {
             <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><line x1="12" y1="22" x2="12" y2="12"/>
           </svg>
 
+          {/* Package small — far left mid */}
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "70%", left: "1%", opacity: 0.07, transform: "rotate(8deg)" }}>
+            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><line x1="12" y1="22" x2="12" y2="12"/>
+          </svg>
+
           {/* Shopping cart — top-right */}
           <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "8%", right: "8%", opacity: 0.09, transform: "rotate(10deg)" }}>
+            <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+          </svg>
+
+          {/* Shopping cart small — bottom center-left */}
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "8%", left: "22%", opacity: 0.07, transform: "rotate(-6deg)" }}>
             <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
           </svg>
 
@@ -36,9 +46,29 @@ export default function Home() {
             <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>
           </svg>
 
-          {/* Star / review — bottom-left */}
-          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "14%", left: "9%", opacity: 0.10, transform: "rotate(15deg)" }}>
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          {/* Trending arrow small — top center */}
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "10%", left: "42%", opacity: 0.07, transform: "rotate(5deg)" }}>
+            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>
+          </svg>
+
+          {/* Dollar sign — bottom-left */}
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "14%", left: "9%", opacity: 0.10, transform: "rotate(-10deg)" }}>
+            <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+
+          {/* Dollar sign small — top left area */}
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "35%", left: "8%", opacity: 0.07, transform: "rotate(14deg)" }}>
+            <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+
+          {/* Pound £ sign — mid-right */}
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "55%", right: "10%", opacity: 0.09, transform: "rotate(-6deg)" }}>
+            <text x="4" y="19" fontFamily="serif" fontSize="18" stroke="#FF6B35" strokeWidth="0.8" fill="none">£</text>
+          </svg>
+
+          {/* Pound £ sign small — bottom center-right */}
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "20%", right: "24%", opacity: 0.07, transform: "rotate(10deg)" }}>
+            <text x="4" y="19" fontFamily="serif" fontSize="18" stroke="#FF6B35" strokeWidth="0.8" fill="none">£</text>
           </svg>
 
           {/* Tag / price label — top center-right */}
@@ -56,14 +86,34 @@ export default function Home() {
             <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
           </svg>
 
+          {/* Search small — bottom far right */}
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "30%", right: "2%", opacity: 0.07, transform: "rotate(12deg)" }}>
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+
           {/* Truck / logistics — bottom center */}
           <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "16%", left: "38%", opacity: 0.07, transform: "rotate(-3deg)" }}>
             <rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
           </svg>
 
-          {/* Euro / revenue — mid-right */}
-          <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "62%", right: "15%", opacity: 0.08, transform: "rotate(12deg)" }}>
+          {/* Euro / revenue — mid-right top */}
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "22%", right: "4%", opacity: 0.08, transform: "rotate(12deg)" }}>
             <path d="M4 10h12M4 14h12M19 6a7 7 0 1 0 0 12 7 7 0 0 0 0-12Z"/>
+          </svg>
+
+          {/* Euro small — top far left */}
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "42%", left: "20%", opacity: 0.06, transform: "rotate(-9deg)" }}>
+            <path d="M4 10h12M4 14h12M19 6a7 7 0 1 0 0 12 7 7 0 0 0 0-12Z"/>
+          </svg>
+
+          {/* Pie chart — top right area */}
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ top: "30%", right: "16%", opacity: 0.07, transform: "rotate(5deg)" }}>
+            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/>
+          </svg>
+
+          {/* Wifi / signal (ads reach) — bottom left far */}
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="absolute" style={{ bottom: "28%", left: "29%", opacity: 0.06, transform: "rotate(-15deg)" }}>
+            <path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="#FF6B35"/>
           </svg>
 
         </div>
