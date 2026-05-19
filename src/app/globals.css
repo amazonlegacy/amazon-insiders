@@ -26,6 +26,6 @@ body {
 }
 
 .font-stencil {
-  font-family: var(--font-stencil), "Stardos Stencil", serif;
-  letter-spacing: 0.02em;
+  font-family: var(--font-stencil), "Bebas Neue", sans-serif;
+  letter-spacing: 0.04em;
 }
