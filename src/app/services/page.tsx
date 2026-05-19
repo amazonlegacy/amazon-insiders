@@ -184,7 +184,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-              Pourquoi choisir Amazon Insiders ?
+              Pourquoi choisir Scallab ?
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -216,7 +216,7 @@ export default function ServicesPage() {
             Tu as une question sur nos services ?
           </h2>
           <p className="text-orange-100 text-lg mb-10 leading-relaxed">
-            Réserve une consultation gratuite de 30 minutes avec un expert Amazon Insiders.
+            Réserve une consultation gratuite de 30 minutes avec un expert Scallab.
           </p>
           <a
             href="/#contact"
@@ -234,11 +234,11 @@ export default function ServicesPage() {
       {/* FOOTER */}
       <footer className="py-10 px-6" style={{ backgroundColor: "#1a1a2e" }}>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <a href="/" className="text-xl font-bold tracking-tight">
-            <span className="text-white">Amazon</span>
-            <span style={{ color: "#FF6B35" }}>Insiders</span>
+          <a href="/" className="text-2xl font-bold tracking-tight font-stencil">
+            <span className="text-white">Scal</span>
+            <span style={{ color: "#FF6B35" }}>lab</span>
           </a>
-          <p className="text-gray-500 text-sm">© 2024 Amazon Insiders. Tous droits réservés.</p>
+          <p className="text-gray-500 text-sm">© 2024 Scallab. Tous droits réservés.</p>
         </div>
       </footer>
     </div>

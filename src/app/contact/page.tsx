@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "Comment fonctionne la communauté d'entraide ?",
-    a: "Tu intègres un groupe privé d'élèves et d'experts. Tu peux poser tes questions à tout moment et l'équipe Amazon Insiders te répond personnellement.",
+    a: "Tu intègres un groupe privé d'élèves et d'experts. Tu peux poser tes questions à tout moment et l'équipe Scallab te répond personnellement.",
   },
   {
     q: "Proposez-vous un accompagnement individuel en plus de la formation ?",
@@ -336,11 +336,11 @@ export default function ContactPage() {
       {/* FOOTER */}
       <footer className="py-10 px-6" style={{ backgroundColor: "#1a1a2e" }}>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <Link href="/" className="text-xl font-bold tracking-tight">
-            <span className="text-white">Amazon</span>
-            <span style={{ color: "#FF6B35" }}>Insiders</span>
+          <Link href="/" className="text-2xl font-bold tracking-tight font-stencil">
+            <span className="text-white">Scal</span>
+            <span style={{ color: "#FF6B35" }}>lab</span>
           </Link>
-          <p className="text-gray-500 text-sm">© 2024 Amazon Insiders. Tous droits réservés.</p>
+          <p className="text-gray-500 text-sm">© 2024 Scallab. Tous droits réservés.</p>
         </div>
       </footer>
     </div>

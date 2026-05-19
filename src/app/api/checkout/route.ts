@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
           price_data: {
             currency: "eur",
             product_data: {
-              name: "Amazon Insiders — La Formation",
+              name: "Scallab — La Formation",
               description:
                 "8 modules · 40+ leçons · Accès à vie · Communauté privée · Mises à jour incluses",
               images: [`${baseUrl}/next.svg`],

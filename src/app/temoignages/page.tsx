@@ -33,7 +33,7 @@ const testimonials = [
     role: "Vendeur FBA - Sport & Outdoor",
     stars: 5,
     category: "Amazon Ads",
-    text: "Mon ACoS était à 42% et je perdais de l'argent sur chaque vente. Après 6 semaines de gestion par Amazon Insiders, il est tombé à 18%. Le ROI est exceptionnel.",
+    text: "Mon ACoS était à 42% et je perdais de l'argent sur chaque vente. Après 6 semaines de gestion par Scallab, il est tombé à 18%. Le ROI est exceptionnel.",
     kpi: "ACoS passé de 42% à 18%",
   },
   {
@@ -63,7 +63,7 @@ const testimonials = [
     role: "Vendeuse confirmée - Jouets & Jeux",
     stars: 5,
     category: "Gestion de compte",
-    text: "Gérer mon Seller Central me prenait 2h par jour. Amazon Insiders s'occupe de tout. Je me concentre sur ma stratégie produit pendant qu'eux gèrent l'opérationnel. Un vrai soulagement.",
+    text: "Gérer mon Seller Central me prenait 2h par jour. Scallab s'occupe de tout. Je me concentre sur ma stratégie produit pendant qu'eux gèrent l'opérationnel. Un vrai soulagement.",
     kpi: "2h/jour récupérées",
   },
   {
@@ -73,7 +73,7 @@ const testimonials = [
     role: "Reconversion professionnelle - Animalerie",
     stars: 5,
     category: "Formation",
-    text: "Après 15 ans en entreprise, je voulais créer mon propre business. La formation Amazon Insiders m'a donné toutes les clés. En 3 mois j'avais quitté mon emploi et vivais de mon activité Amazon.",
+    text: "Après 15 ans en entreprise, je voulais créer mon propre business. La formation Scallab m'a donné toutes les clés. En 3 mois j'avais quitté mon emploi et vivais de mon activité Amazon.",
     kpi: "Reconversion réussie en 3 mois",
   },
 ];
@@ -275,11 +275,11 @@ export default function TemoignagesPage() {
       {/* FOOTER */}
       <footer className="py-10 px-6" style={{ backgroundColor: "#1a1a2e" }}>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <Link href="/" className="text-xl font-bold tracking-tight">
-            <span className="text-white">Amazon</span>
-            <span style={{ color: "#FF6B35" }}>Insiders</span>
+          <Link href="/" className="text-2xl font-bold tracking-tight font-stencil">
+            <span className="text-white">Scal</span>
+            <span style={{ color: "#FF6B35" }}>lab</span>
           </Link>
-          <p className="text-gray-500 text-sm">© 2024 Amazon Insiders. Tous droits réservés.</p>
+          <p className="text-gray-500 text-sm">© 2024 Scallab. Tous droits réservés.</p>
         </div>
       </footer>
     </div>

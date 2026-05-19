@@ -125,7 +125,7 @@ export default function Home() {
               Programme complet
             </div>
             <h2 className="text-4xl font-extrabold text-white mb-4">
-              Amazon Insiders — La Formation
+              Scallab — La Formation
             </h2>
             <p className="text-gray-400 text-lg">
               8 semaines pour lancer et scaler ton business Amazon
@@ -260,11 +260,11 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="py-10 px-6" style={{ backgroundColor: "#1a1a2e" }}>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-xl font-bold tracking-tight">
-            <span className="text-white">Amazon</span>
-            <span style={{ color: "#FF6B35" }}>Insiders</span>
+          <div className="text-2xl font-bold tracking-tight font-stencil">
+            <span className="text-white">Scal</span>
+            <span style={{ color: "#FF6B35" }}>lab</span>
           </div>
-          <p className="text-gray-500 text-sm">© 2024 Amazon Insiders. Tous droits réservés.</p>
+          <p className="text-gray-500 text-sm">© 2024 Scallab. Tous droits réservés.</p>
         </div>
       </footer>
     </div>

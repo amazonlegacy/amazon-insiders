@@ -17,9 +17,9 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-xl font-bold tracking-tight">
-          <span className="text-gray-900">Amazon</span>
-          <span style={{ color: "#FF6B35" }}>Insiders</span>
+        <Link href="/" className="text-2xl font-bold tracking-tight font-stencil">
+          <span className="text-gray-900">Scal</span>
+          <span style={{ color: "#FF6B35" }}>lab</span>
         </Link>
 
         {/* Navigation */}

@@ -97,7 +97,7 @@ const modules = [
     duration: "120 min",
     lessons: 7,
     description:
-      "Le module le plus attendu. C'est ici que Amazon Insiders se différencie des formations généralistes. Maîtriser les Ads est ton avantage concurrentiel.",
+      "Le module le plus attendu. C'est ici que Scallab se différencie des formations généralistes. Maîtriser les Ads est ton avantage concurrentiel.",
     items: [
       "Les 3 types de campagnes — SP, SB, SD",
       "Structure de compte optimale",
@@ -444,7 +444,7 @@ export default function FormationPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-xl mx-auto">
             {[
               "Espace d'échange privé réservé aux élèves",
-              "Réponses garanties de l'équipe Amazon Insiders",
+              "Réponses garanties de l'équipe Scallab",
               "Partage d'expériences entre vendeurs",
               "Accès à vie à la communauté",
             ].map((item) => (
@@ -571,11 +571,11 @@ export default function FormationPage() {
       {/* FOOTER */}
       <footer className="py-10 px-6" style={{ backgroundColor: "#1a1a2e" }}>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <Link href="/" className="text-xl font-bold tracking-tight">
-            <span className="text-white">Amazon</span>
-            <span style={{ color: "#FF6B35" }}>Insiders</span>
+          <Link href="/" className="text-2xl font-bold tracking-tight font-stencil">
+            <span className="text-white">Scal</span>
+            <span style={{ color: "#FF6B35" }}>lab</span>
           </Link>
-          <p className="text-gray-500 text-sm">© 2024 Amazon Insiders. Tous droits réservés.</p>
+          <p className="text-gray-500 text-sm">© 2024 Scallab. Tous droits réservés.</p>
         </div>
       </footer>
     </div>

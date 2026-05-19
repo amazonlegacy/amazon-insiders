@@ -12,7 +12,13 @@
       "Bash(git init *)",
       "Bash(git add *)",
       "Bash(git commit -m 'Initial commit — Amazon Insiders Next.js app *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(gh repo *)",
+      "Bash(npm show *)",
+      "Bash(node -e \"const s = require\\('./node_modules/stripe/package.json'\\); console.log\\('installed:', s.version\\)\")",
+      "Bash(node -e \"const S = require\\('./node_modules/stripe/esm/stripe.esm.node'\\); console.log\\(Object.keys\\(S.Stripe || S\\).filter\\(k => k.toLowerCase\\(\\).includes\\('version'\\) || k.toLowerCase\\(\\).includes\\('api'\\)\\)\\)\")",
+      "Bash(git push *)",
+      "Bash(git commit *)"
     ]
   }
 }
