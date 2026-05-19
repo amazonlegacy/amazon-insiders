@@ -571,7 +571,7 @@ export default function FormationPage() {
       {/* FOOTER */}
       <footer className="py-10 px-6" style={{ backgroundColor: "#1a1a2e" }}>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <Link href="/" className="text-2xl font-bold tracking-tight font-stencil">
+          <Link href="/" className="text-5xl font-bold tracking-tight font-stencil" style={{ lineHeight: 1 }}>
             <span className="text-white">Scal</span>
             <span style={{ color: "#FF6B35" }}>lab</span>
           </Link>
