@@ -1,0 +1,632 @@
+{
+  "header": {
+    "nav": {
+      "services": "Services",
+      "formation": "Training",
+      "temoignages": "Testimonials",
+      "contact": "Contact"
+    },
+    "login": "Log in",
+    "cta": "Free consultation"
+  },
+  "home": {
+    "hero": {
+      "badge": "Amazon FBA & Seller Central Expert",
+      "title1": "Grow your business",
+      "title2": "on Amazon",
+      "subtitle": "Expert guidance in FBA, account management, listing optimization and Amazon Ads. Real results, not just promises.",
+      "cta_primary": "Get started now",
+      "cta_secondary": "View the course"
+    },
+    "stats": {
+      "clients_value": "120+",
+      "clients_label": "Clients supported",
+      "revenue_value": "3.4M€",
+      "revenue_label": "Revenue generated",
+      "satisfaction_value": "100%",
+      "satisfaction_label": "Satisfaction"
+    },
+    "services": {
+      "title": "Our services",
+      "subtitle": "Everything you need to dominate Amazon",
+      "items": [
+        {
+          "icon": "📦",
+          "title": "Amazon FBA",
+          "desc": "Launch, sourcing, logistics and complete strategy to sell on Amazon using the FBA model."
+        },
+        {
+          "icon": "🖥️",
+          "title": "Seller Account Management",
+          "desc": "Full management of your Seller Central: KPI tracking, dispute handling, account health."
+        },
+        {
+          "icon": "🔍",
+          "title": "Listing Optimization",
+          "desc": "Amazon SEO, high-converting images, compelling titles and optimized bullet points."
+        },
+        {
+          "icon": "📊",
+          "title": "Amazon Ads / PPC",
+          "desc": "Sponsored Products, Brands and Display campaigns to maximize your visibility and ROI."
+        }
+      ]
+    },
+    "formation": {
+      "badge": "Complete program",
+      "title": "Scallab — The Course",
+      "subtitle": "8 weeks to launch and scale your Amazon business",
+      "modules": [
+        "Understanding the Amazon ecosystem",
+        "Finding a winning product",
+        "Supplier sourcing and negotiation",
+        "Creating and optimizing listings",
+        "Product launch",
+        "Mastering Amazon Ads",
+        "Analyzing data and scaling",
+        "Automating and building a brand"
+      ],
+      "cta": "Access the course"
+    },
+    "testimonials": {
+      "title": "What our clients say",
+      "subtitle": "Concrete, measurable results",
+      "items": [
+        {
+          "initials": "SL",
+          "name": "Sophie L.",
+          "text": "I doubled my revenue in 3 months thanks to the coaching. The team is available, responsive and truly expert."
+        },
+        {
+          "initials": "KM",
+          "name": "Karim M.",
+          "text": "I launched my first product in 6 weeks thanks to the course. Everything is structured, clear and actionable."
+        },
+        {
+          "initials": "TF",
+          "name": "Thomas F.",
+          "text": "My Ads campaigns went from 42% to 18% ACoS. Impressive ROI in just a few weeks."
+        },
+        {
+          "initials": "AL",
+          "name": "Amina L.",
+          "text": "My conversions increased by 68% after listing optimization. The details really make the difference."
+        }
+      ]
+    },
+    "cta_section": {
+      "title": "Ready to take it to the next level?",
+      "subtitle": "Join dozens of entrepreneurs who have transformed their Amazon business",
+      "email_placeholder": "Your email address",
+      "cta": "Free consultation"
+    },
+    "footer": {
+      "copyright": "© 2024 Scallab. All rights reserved."
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": "Certified Amazon Expert",
+      "title": "Our Amazon Services",
+      "subtitle": "Specialized expertise to accelerate your growth on Amazon, whether you're a beginner or established seller."
+    },
+    "items": [
+      {
+        "id": "fba",
+        "icon": "📦",
+        "title": "Amazon FBA",
+        "description": "We guide you from A to Z in launching your FBA business: winning product selection, supplier sourcing in China or Europe, negotiation, FBA shipment creation, inventory management and growth strategy.",
+        "points": [
+          "Product research and validation",
+          "Supplier sourcing and negotiation",
+          "Listing creation and optimization",
+          "Launch strategy",
+          "Ongoing monitoring and optimization"
+        ],
+        "price": "From €500",
+        "bg": "bg-white"
+      },
+      {
+        "id": "seller",
+        "icon": "🖥️",
+        "title": "Seller Account Management",
+        "description": "We handle complete management of your Seller Central: performance monitoring, customer review management, Seller Support case handling, inventory and shipment tracking, real-time alerts.",
+        "points": [
+          "Daily account monitoring",
+          "Review and return management",
+          "Performance and KPI tracking",
+          "Seller Support dispute handling",
+          "Detailed monthly reporting"
+        ],
+        "price": "From €300/month",
+        "bg": "bg-gray-50"
+      },
+      {
+        "id": "listings",
+        "icon": "🔍",
+        "title": "Listing Optimization",
+        "description": "Your listings are your storefront on Amazon. We optimize every element to maximize visibility and conversion rate: title, bullet points, description, backend keywords and visuals.",
+        "points": [
+          "In-depth keyword research",
+          "SEO-optimized title writing",
+          "Persuasive and optimized bullet points",
+          "Enhanced HTML description",
+          "Backend keyword optimization"
+        ],
+        "price": "From €150 per listing",
+        "bg": "bg-white"
+      },
+      {
+        "id": "ads",
+        "icon": "📊",
+        "title": "Amazon Ads / PPC",
+        "description": "We create and manage your Amazon advertising campaigns to maximize visibility and reduce your ACoS. Sponsored Products, Sponsored Brands and Sponsored Display managed by certified experts.",
+        "points": [
+          "Audit of your existing campaigns",
+          "Campaign structure creation",
+          "Weekly management and optimization",
+          "ACoS reduction",
+          "Monthly reporting with recommendations"
+        ],
+        "price": "From €400/month",
+        "bg": "bg-gray-50"
+      }
+    ],
+    "included": "Included in this service",
+    "contact_cta": "Get in touch",
+    "why_us": {
+      "title": "Why choose Scallab?",
+      "items": [
+        {
+          "icon": "🏅",
+          "title": "Certified Amazon Experts",
+          "desc": "Over 5 years of experience on the marketplace"
+        },
+        {
+          "icon": "📈",
+          "title": "Proven Results",
+          "desc": "120+ clients supported and €3.4M in revenue generated"
+        },
+        {
+          "icon": "🎯",
+          "title": "Personalized Support",
+          "desc": "A tailored strategy for every client"
+        },
+        {
+          "icon": "🔎",
+          "title": "Full Transparency",
+          "desc": "Detailed reporting and regular communication"
+        }
+      ]
+    },
+    "cta_section": {
+      "title": "Have a question about our services?",
+      "subtitle": "Book a free 30-minute consultation with a Scallab expert.",
+      "cta": "Book my free consultation"
+    },
+    "footer": {
+      "copyright": "© 2024 Scallab. All rights reserved."
+    }
+  },
+  "formation": {
+    "hero": {
+      "badge": "Complete course",
+      "title": "Master Amazon from A to Z",
+      "subtitle": "8 modules, 40+ lessons, practical exercises and a support community to launch and scale your Amazon business.",
+      "cta_primary": "Access the course",
+      "cta_secondary": "View the program",
+      "stats": [
+        { "value": "8", "label": "Modules" },
+        { "value": "40+", "label": "Lessons" },
+        { "value": "∞", "label": "Lifetime access" }
+      ]
+    },
+    "intro": {
+      "title": "What you'll achieve",
+      "subtitle": "Whether you're a complete beginner or a stagnating Amazon seller, this course gives you a rigorous, actionable method. No useless theory — only what works in 2024.",
+      "profiles": [
+        {
+          "icon": "🚀",
+          "title": "You're a complete beginner",
+          "desc": "You want to launch your first product on Amazon without making mistakes from the start."
+        },
+        {
+          "icon": "📈",
+          "title": "You already sell on Amazon",
+          "desc": "You want to optimize your listings, reduce your ACoS and scale your sales."
+        },
+        {
+          "icon": "🎓",
+          "title": "You want serious training",
+          "desc": "You're looking for a complete, up-to-date course with real support."
+        }
+      ]
+    },
+    "modules_section": {
+      "title": "The full program",
+      "subtitle": "A logical progression from beginner to autonomous seller."
+    },
+    "lessons_label": "lesson",
+    "lessons_label_plural": "lessons",
+    "bonus_label": "Bonus",
+    "modules": [
+      {
+        "num": "Intro",
+        "title": "Welcome and overview",
+        "duration": null,
+        "lessons": 3,
+        "description": "What you'll achieve with concrete results and realistic timeline. How to navigate the course. The 3 mistakes 90% of Amazon beginners make.",
+        "items": [
+          "What you'll achieve — concrete results and realistic timeline",
+          "How to navigate the course",
+          "The 3 mistakes 90% of Amazon beginners make"
+        ]
+      },
+      {
+        "num": "01",
+        "title": "Understanding the Amazon ecosystem",
+        "duration": "45 min",
+        "lessons": 4,
+        "description": "Before selling, you need to understand how Amazon thinks. This module prevents missteps from the very start.",
+        "items": [
+          "How the A9/A10 algorithm works",
+          "FBA vs FBM vs SFP — choosing your logistics model",
+          "Individual vs Professional — when to upgrade to a Pro account",
+          "Full Seller Central walkthrough in a live demo"
+        ]
+      },
+      {
+        "num": "02",
+        "title": "Finding the right product to sell",
+        "duration": "90 min",
+        "lessons": 6,
+        "description": "The most important module. 80% of Amazon failures come from a poor product choice. A rigorous method, not guesswork.",
+        "items": [
+          "Criteria for a winning product",
+          "Product research with Helium 10 in a live demo",
+          "Analyzing competition and estimating demand",
+          "Calculating margins with the FBA Calculator",
+          "Finding suppliers on Alibaba",
+          "Exercise: validate your product idea"
+        ]
+      },
+      {
+        "num": "03",
+        "title": "Creating a listing that converts",
+        "duration": "75 min",
+        "lessons": 5,
+        "description": "A good product poorly presented won't sell. This module covers everything that gets a listing to page one and converts.",
+        "items": [
+          "Keyword research with Helium 10 Cerebro",
+          "Writing optimized title, bullet points and description",
+          "Product photos that make the difference",
+          "Creating your A+ page in a live demo",
+          "Pricing — launch strategy vs target price"
+        ]
+      },
+      {
+        "num": "04",
+        "title": "FBA logistics and inventory management",
+        "duration": "60 min",
+        "lessons": 4,
+        "description": "The part beginners underestimate. A stockout destroys your ranking. Poor preparation generates hidden fees.",
+        "items": [
+          "Sending your first shipment to Amazon",
+          "Understanding FBA fees",
+          "Managing inventory and anticipating stockouts",
+          "Quality inspection and return management"
+        ]
+      },
+      {
+        "num": "05",
+        "title": "Amazon Ads",
+        "duration": "120 min",
+        "lessons": 7,
+        "description": "The most anticipated module. This is where Scallab differentiates from generic courses. Mastering Ads is your competitive advantage.",
+        "items": [
+          "The 3 campaign types — SP, SB, SD",
+          "Optimal account structure",
+          "Launching your first auto campaign in a live demo",
+          "Going manual — exploiting data",
+          "Optimizing your ACoS — the weekly method",
+          "Product launch strategy with Ads",
+          "Exercise: audit a real campaign"
+        ]
+      },
+      {
+        "num": "06",
+        "title": "Customer reviews and reputation",
+        "duration": "45 min",
+        "lessons": 3,
+        "description": "Reviews are the fuel for ranking and conversion. Only methods compliant with Amazon's ToS.",
+        "items": [
+          "Amazon Vine and the Request a Review button",
+          "Managing negative reviews",
+          "What you should absolutely never do"
+        ]
+      },
+      {
+        "num": "07",
+        "title": "Analyzing performance and scaling",
+        "duration": "60 min",
+        "lessons": 4,
+        "description": "Once the first sales come in, most sellers stagnate because they can't read their data. This module turns numbers into decisions.",
+        "items": [
+          "The Seller Central reports you must master",
+          "Calculating your true profitability",
+          "Scaling: more Ads budget or new product?",
+          "Expanding to other European marketplaces"
+        ]
+      },
+      {
+        "num": "🎁",
+        "title": "Resources, tools and community",
+        "duration": "Permanent access",
+        "lessons": 4,
+        "description": "All the tools and resources to move faster and never get stuck.",
+        "items": [
+          "PDF product launch checklist — 40 points to validate",
+          "Margin calculation Google Sheets spreadsheet",
+          "Recommended tools with promo codes: Helium 10, Jungle Scout, Keepa, SellerBoard",
+          "Access to the private Discord support group"
+        ],
+        "isBonus": true
+      }
+    ],
+    "community": {
+      "badge": "Included in the course",
+      "title": "A community so you're never stuck",
+      "subtitle": "By joining the course, you enter a private group of students and Amazon Insiders experts. Ask questions, share progress, get concrete answers. We're here to support you at every step.",
+      "items": [
+        "Private exchange space reserved for students",
+        "Guaranteed responses from the Scallab team",
+        "Experience sharing between sellers",
+        "Lifetime access to the community"
+      ]
+    },
+    "skills": {
+      "title": "What you'll be able to do after the course",
+      "subtitle": "Concrete skills, immediately applicable.",
+      "items": [
+        "Find a profitable product using the Helium 10 method",
+        "Contact and negotiate with Alibaba suppliers",
+        "Create an SEO-optimized listing that ranks on Amazon",
+        "Launch and manage profitable Amazon Ads campaigns",
+        "Reduce ACoS and maximize advertising ROI",
+        "Manage FBA logistics without stockouts",
+        "Obtain customer reviews in a compliant way",
+        "Read and interpret your Seller Central reports",
+        "Calculate your real net margin",
+        "Scale your Amazon business",
+        "Avoid errors and account suspensions",
+        "Sell on multiple European marketplaces"
+      ]
+    },
+    "pricing": {
+      "title": "Access the course",
+      "subtitle": "A one-time investment, lifetime access.",
+      "plan_name": "Full course",
+      "price": "€497",
+      "price_note": "one-time payment · lifetime access",
+      "items": [
+        "8 modules · 40+ video lessons",
+        "Practical exercises and templates",
+        "PDF launch checklist (40 points)",
+        "Margin calculation Google Sheets",
+        "Tool promo codes: Helium 10, Jungle Scout…",
+        "Access to the private Discord group",
+        "Future updates included",
+        "Lifetime access, no subscription"
+      ],
+      "buy_btn": "Access the course — €497",
+      "buy_loading": "Redirecting…",
+      "secure_payment": "Secure payment by Stripe · 14-day money-back guarantee"
+    },
+    "cta_section": {
+      "title": "Ready to launch your Amazon business?",
+      "subtitle": "Join the course and start today.",
+      "cta": "Access the course",
+      "note": "Lifetime access · Updates included · Private community"
+    },
+    "footer": {
+      "copyright": "© 2024 Scallab. All rights reserved."
+    }
+  },
+  "temoignages": {
+    "hero": {
+      "title1": "They transformed",
+      "title2": "their Amazon business",
+      "subtitle": "120+ entrepreneurs supported. Here are their results.",
+      "stats": [
+        { "value": "120+", "label": "Clients supported" },
+        { "value": "3.4M€", "label": "Revenue generated" },
+        { "value": "100%", "label": "Satisfaction" }
+      ]
+    },
+    "categories": ["All", "Training", "Amazon FBA", "Account management", "Listing optimization", "Amazon Ads"],
+    "no_results": "No testimonials for this category.",
+    "testimonials": [
+      {
+        "initials": "SL",
+        "color": "#6366f1",
+        "name": "Sophie Laurent",
+        "role": "FBA Seller - Home accessories",
+        "stars": 5,
+        "category": "Training",
+        "text": "I was a complete beginner when I joined the course. Within 8 weeks I had launched my first product. The method is clear, actionable, no fluff. I recommend it wholeheartedly.",
+        "kpi": "First product launched in 8 weeks"
+      },
+      {
+        "initials": "TF",
+        "color": "#0ea5e9",
+        "name": "Thomas Ferreira",
+        "role": "FBA Seller - Sport & Outdoor",
+        "stars": 5,
+        "category": "Amazon Ads",
+        "text": "My ACoS was at 42% and I was losing money on every sale. After 6 weeks of management by Scallab, it dropped to 18%. The ROI is exceptional.",
+        "kpi": "ACoS dropped from 42% to 18%"
+      },
+      {
+        "initials": "AL",
+        "color": "#ec4899",
+        "name": "Amina Leblanc",
+        "role": "Private label - Beauty & Care",
+        "stars": 5,
+        "category": "Listing optimization",
+        "text": "My listing had been live for 8 months without really performing. After a full optimization by the team, my conversions jumped 68% in less than a month. Impressive.",
+        "kpi": "Conversions +68% in 1 month"
+      },
+      {
+        "initials": "KM",
+        "color": "#10b981",
+        "name": "Karim Mansouri",
+        "role": "FBA Beginner - Kitchen & Home",
+        "stars": 5,
+        "category": "Amazon FBA",
+        "text": "I was looking for serious support to launch my FBA business. The team guided me from sourcing to launch. Today I generate €8,000 in monthly revenue after 4 months.",
+        "kpi": "€8,000 revenue/month after 4 months"
+      },
+      {
+        "initials": "JM",
+        "color": "#f59e0b",
+        "name": "Julie Moreau",
+        "role": "Experienced seller - Toys & Games",
+        "stars": 5,
+        "category": "Account management",
+        "text": "Managing my Seller Central was taking 2 hours a day. Scallab takes care of everything. I focus on my product strategy while they handle operations. A true relief.",
+        "kpi": "2 hours/day saved"
+      },
+      {
+        "initials": "NP",
+        "color": "#8b5cf6",
+        "name": "Nicolas Petit",
+        "role": "Career change - Pet supplies",
+        "stars": 5,
+        "category": "Training",
+        "text": "After 15 years in corporate, I wanted to build my own business. The Scallab course gave me all the keys. Within 3 months I had left my job and was living from my Amazon business.",
+        "kpi": "Successful career change in 3 months"
+      }
+    ],
+    "stats_section": {
+      "title": "Results that speak for themselves",
+      "items": [
+        { "value": "120+", "label": "Clients supported since 2021" },
+        { "value": "3.4M€", "label": "in revenue generated for our clients" },
+        { "value": "100%", "label": "of satisfied or very satisfied clients" },
+        { "value": "-58%", "label": "average ACoS reduced on managed accounts" }
+      ]
+    },
+    "cta_section": {
+      "title": "Ready to write your success story?",
+      "subtitle": "Join the entrepreneurs who transformed their Amazon business with us.",
+      "cta_formation": "View the course",
+      "cta_consultation": "Free consultation"
+    },
+    "footer": {
+      "copyright": "© 2024 Scallab. All rights reserved."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact us",
+      "subtitle": "A question about our services or the course?",
+      "subtitle2": "Our team responds within 24 hours."
+    },
+    "left": {
+      "title": "We're here for you",
+      "subtitle": "Whether you have a question about our services, the course or your Amazon project, feel free to write to us. We respond to every message personally.",
+      "contact_items": [
+        "contact@amazon-insiders.com",
+        "Response within 24 hours guaranteed",
+        "Free 30-minute consultation available"
+      ],
+      "follow_us": "Follow us"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name_label": "First and last name",
+      "name_placeholder": "John Smith",
+      "email_label": "Email address",
+      "email_placeholder": "john@email.com",
+      "subject_label": "Subject",
+      "subject_placeholder": "Select a subject",
+      "subject_options": [
+        { "value": "services", "label": "Inquiry about services" },
+        { "value": "formation", "label": "Inquiry about the course" },
+        { "value": "consultation", "label": "Free consultation request" },
+        { "value": "autre", "label": "Other" }
+      ],
+      "message_label": "Message",
+      "message_placeholder": "Describe your project or question...",
+      "submit": "Send message",
+      "footer_note": "We respond within 24h · No commitment"
+    },
+    "success": {
+      "title": "Message sent!",
+      "subtitle": "We'll respond within 24 hours.",
+      "send_another": "Send another message"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "subtitle": "Answers to the questions we get asked most often.",
+      "items": [
+        {
+          "q": "Is the course suitable for complete beginners?",
+          "a": "Yes, the course starts from scratch. No Amazon experience required. We explain each step in order."
+        },
+        {
+          "q": "How long does it take to see results?",
+          "a": "The first concrete results typically come between 6 and 12 weeks after launching the first product, following our method."
+        },
+        {
+          "q": "Do I have lifetime access to the course?",
+          "a": "Yes. Once you purchase the course, you have lifetime access as well as all future updates at no extra cost."
+        },
+        {
+          "q": "How does the support community work?",
+          "a": "You join a private group of students and experts. You can ask questions at any time and the Scallab team responds personally."
+        },
+        {
+          "q": "Do you offer individual coaching in addition to the course?",
+          "a": "Yes, we offer personalized coaching services. Check our Services page or contact us directly to discuss."
+        }
+      ]
+    },
+    "footer": {
+      "copyright": "© 2024 Scallab. All rights reserved."
+    }
+  },
+  "login": {
+    "title": "Access the course",
+    "subtitle": "Log in to access your student area",
+    "email_label": "Email address",
+    "email_placeholder": "your@email.com",
+    "password_label": "Password",
+    "forgot_password": "Forgot your password?",
+    "show_password": "Show password",
+    "hide_password": "Hide password",
+    "submit": "Log in",
+    "no_access": "Don't have access yet?",
+    "join_formation": "Join the course"
+  },
+  "succes": {
+    "title": "Welcome to the course! 🎉",
+    "subtitle": "Your payment has been received. You will receive a confirmation email with access to the course and the private community.",
+    "included_label": "What's included",
+    "included_items": [
+      "8 modules · 40+ video lessons",
+      "Access to the private Discord group",
+      "Resources & PDF templates",
+      "Future updates included"
+    ],
+    "cta": "Access my student area",
+    "back_home": "Back to home"
+  },
+  "annulation": {
+    "title": "Payment cancelled",
+    "subtitle": "You have cancelled the payment. No amount has been charged. You can return to the course at any time.",
+    "cta_formation": "Return to the course",
+    "cta_contact": "Have a question? Contact us",
+    "back_home": "Back to home"
+  }
+}

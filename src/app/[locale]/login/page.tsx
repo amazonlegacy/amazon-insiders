@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export default function LoginPage() {
+  const t = useTranslations("login");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -28,22 +30,22 @@ export default function LoginPage() {
       <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl px-8 py-10">
         {/* Header */}
         <div className="mb-8 text-center">
-          <h1 className="text-2xl font-extrabold text-gray-900 mb-2">Accéder à la formation</h1>
-          <p className="text-gray-500 text-sm">Connecte-toi pour accéder à ton espace élève</p>
+          <h1 className="text-2xl font-extrabold text-gray-900 mb-2">{t("title")}</h1>
+          <p className="text-gray-500 text-sm">{t("subtitle")}</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-5">
           {/* Email */}
           <div>
             <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-1.5">
-              Adresse email
+              {t("email_label")}
             </label>
             <input
               id="email"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="ton@email.com"
+              placeholder={t("email_placeholder")}
               required
               className="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-900 placeholder-gray-400 text-sm outline-none transition-all duration-200 focus:border-[#FF6B35] focus:ring-2 focus:ring-[#FF6B35]/20"
             />
@@ -52,7 +54,7 @@ export default function LoginPage() {
           {/* Mot de passe */}
           <div>
             <label htmlFor="password" className="block text-sm font-semibold text-gray-700 mb-1.5">
-              Mot de passe
+              {t("password_label")}
             </label>
             <div className="relative">
               <input
@@ -68,7 +70,7 @@ export default function LoginPage() {
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
                 className="absolute right-3.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
-                aria-label={showPassword ? "Masquer le mot de passe" : "Afficher le mot de passe"}
+                aria-label={showPassword ? t("hide_password") : t("show_password")}
               >
                 {showPassword ? (
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -89,7 +91,7 @@ export default function LoginPage() {
                 className="text-xs font-semibold transition-colors hover:opacity-80"
                 style={{ color: "#FF6B35" }}
               >
-                Mot de passe oublié ?
+                {t("forgot_password")}
               </a>
             </div>
           </div>
@@ -100,19 +102,19 @@ export default function LoginPage() {
             className="w-full py-3.5 rounded-xl text-white font-bold text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg active:scale-[0.98] mt-2"
             style={{ backgroundColor: "#FF6B35" }}
           >
-            Se connecter
+            {t("submit")}
           </button>
         </form>
 
         {/* Footer */}
         <p className="text-center text-sm text-gray-500 mt-7">
-          Tu n'as pas encore accès ?{" "}
+          {t("no_access")}{" "}
           <Link
             href="/formation#tarif"
             className="font-semibold transition-colors hover:opacity-80"
             style={{ color: "#FF6B35" }}
           >
-            Rejoins la formation
+            {t("join_formation")}
           </Link>
         </p>
       </div>

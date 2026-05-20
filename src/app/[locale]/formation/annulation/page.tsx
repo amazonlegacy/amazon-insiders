@@ -1,15 +1,18 @@
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 
-export default function AnnulationPage() {
+export default async function AnnulationPage() {
+  const t = await getTranslations("annulation");
+
   return (
     <div
       className="min-h-screen flex flex-col items-center justify-center px-4 py-12 font-sans"
       style={{ background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)" }}
     >
       {/* Logo */}
-      <Link href="/" className="text-2xl font-bold tracking-tight mb-10">
-        <span className="text-white">Amazon</span>
-        <span style={{ color: "#FF6B35" }}>Insiders</span>
+      <Link href="/" className="text-2xl font-bold tracking-tight mb-10 font-stencil">
+        <span className="text-white">Scal</span>
+        <span style={{ color: "#FF6B35", fontStyle: "italic" }}>lab</span>
       </Link>
 
       {/* Card */}
@@ -22,11 +25,10 @@ export default function AnnulationPage() {
         </div>
 
         <h1 className="text-2xl font-extrabold text-gray-900 mb-3">
-          Paiement annulé
+          {t("title")}
         </h1>
         <p className="text-gray-500 text-sm leading-relaxed mb-8">
-          Tu as annulé le paiement. Aucun montant n'a été débité.
-          Tu peux reprendre la formation à tout moment.
+          {t("subtitle")}
         </p>
 
         <Link
@@ -34,7 +36,7 @@ export default function AnnulationPage() {
           className="block w-full py-3.5 rounded-xl text-white font-bold text-sm text-center transition-all duration-200 hover:opacity-90 hover:shadow-lg active:scale-[0.98] mb-3"
           style={{ backgroundColor: "#FF6B35" }}
         >
-          Retourner à la formation
+          {t("cta_formation")}
         </Link>
 
         <Link
@@ -42,14 +44,14 @@ export default function AnnulationPage() {
           className="block w-full py-3.5 rounded-xl font-bold text-sm text-center border-2 transition-all duration-200 hover:bg-orange-50 active:scale-[0.98]"
           style={{ borderColor: "#FF6B35", color: "#FF6B35" }}
         >
-          Une question ? Contacte-nous
+          {t("cta_contact")}
         </Link>
 
         <Link
           href="/"
           className="block text-xs text-gray-400 mt-5 hover:text-gray-600 transition-colors"
         >
-          Retour à l'accueil
+          {t("back_home")}
         </Link>
       </div>
     </div>

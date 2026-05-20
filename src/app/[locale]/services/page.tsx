@@ -1,98 +1,28 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Header from "@/components/Header";
-
-const services = [
-  {
-    id: "fba",
-    icon: "📦",
-    title: "Amazon FBA",
-    description:
-      "Nous t'accompagnons de A à Z dans le lancement de ton activité FBA : sélection de produits gagnants, sourcing fournisseur en Chine ou en Europe, négociation, création des expéditions FBA, gestion des stocks et stratégie de croissance.",
-    points: [
-      "Recherche et validation produit",
-      "Sourcing et négociation fournisseur",
-      "Création et optimisation du listing",
-      "Stratégie de lancement",
-      "Suivi et optimisation continue",
-    ],
-    price: "À partir de 500€",
-    bg: "bg-white",
-  },
-  {
-    id: "seller",
-    icon: "🖥️",
-    title: "Gestion de compte Seller",
-    description:
-      "Nous prenons en charge la gestion complète de ton Seller Central : surveillance des performances, gestion des avis clients, traitement des cas Seller Support, suivi des stocks et des expéditions, alertes en temps réel.",
-    points: [
-      "Surveillance quotidienne du compte",
-      "Gestion des avis et retours",
-      "Suivi des performances et KPIs",
-      "Gestion des litiges Seller Support",
-      "Reporting mensuel détaillé",
-    ],
-    price: "À partir de 300€/mois",
-    bg: "bg-gray-50",
-  },
-  {
-    id: "listings",
-    icon: "🔍",
-    title: "Optimisation de listings",
-    description:
-      "Tes listings sont ta vitrine sur Amazon. Nous optimisons chaque élément pour maximiser ta visibilité et ton taux de conversion : titre, bullet points, description, backend keywords et visuels.",
-    points: [
-      "Recherche de mots-clés approfondie",
-      "Rédaction du titre optimisé SEO",
-      "Bullet points persuasifs et optimisés",
-      "Description HTML enrichie",
-      "Optimisation des backend keywords",
-    ],
-    price: "À partir de 150€ par listing",
-    bg: "bg-white",
-  },
-  {
-    id: "ads",
-    icon: "📊",
-    title: "Amazon Ads / PPC",
-    description:
-      "Nous créons et gérons tes campagnes publicitaires Amazon pour maximiser ta visibilité et réduire ton ACoS. Sponsored Products, Sponsored Brands et Sponsored Display gérés par des experts certifiés.",
-    points: [
-      "Audit de tes campagnes existantes",
-      "Création de la structure de campagnes",
-      "Gestion et optimisation hebdomadaire",
-      "Réduction de l'ACoS",
-      "Reporting mensuel avec recommandations",
-    ],
-    price: "À partir de 400€/mois",
-    bg: "bg-gray-50",
-  },
-];
-
-const whyUs = [
-  {
-    icon: "🏅",
-    title: "Experts certifiés Amazon",
-    desc: "Plus de 5 ans d'expérience sur la marketplace",
-  },
-  {
-    icon: "📈",
-    title: "Résultats prouvés",
-    desc: "120+ clients accompagnés et 3.4M€ de CA généré",
-  },
-  {
-    icon: "🎯",
-    title: "Accompagnement personnalisé",
-    desc: "Une stratégie sur mesure pour chaque client",
-  },
-  {
-    icon: "🔎",
-    title: "Transparence totale",
-    desc: "Reporting détaillé et communication régulière",
-  },
-];
+import { Link } from "@/i18n/navigation";
 
 export default function ServicesPage() {
+  const t = useTranslations("services");
+
+  const services = t.raw("items") as Array<{
+    id: string;
+    icon: string;
+    title: string;
+    description: string;
+    points: string[];
+    price: string;
+    bg: string;
+  }>;
+
+  const whyUs = t.raw("why_us.items") as Array<{
+    icon: string;
+    title: string;
+    desc: string;
+  }>;
+
   return (
     <div className="font-sans text-gray-900">
       <Header />
@@ -104,14 +34,13 @@ export default function ServicesPage() {
       >
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold mb-6 tracking-wide bg-white/20 text-white">
-            Expert certifié Amazon
+            {t("hero.badge")}
           </div>
           <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6">
-            Nos Services Amazon
+            {t("hero.title")}
           </h1>
           <p className="text-lg md:text-xl text-orange-100 leading-relaxed max-w-2xl mx-auto">
-            Des expertises pointues pour accélérer ta croissance sur Amazon,
-            que tu sois débutant ou vendeur confirmé.
+            {t("hero.subtitle")}
           </p>
         </div>
       </section>
@@ -143,7 +72,7 @@ export default function ServicesPage() {
                     className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-white font-semibold text-base transition-all duration-200 hover:opacity-90 hover:shadow-lg hover:-translate-y-0.5 active:scale-95"
                     style={{ backgroundColor: "#FF6B35" }}
                   >
-                    Prendre contact
+                    {t("contact_cta")}
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -155,7 +84,7 @@ export default function ServicesPage() {
               <div className="lg:w-80 w-full shrink-0">
                 <div className="rounded-2xl border border-gray-100 bg-white shadow-md p-7">
                   <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-5">
-                    Inclus dans ce service
+                    {t("included")}
                   </h3>
                   <ul className="space-y-4">
                     {service.points.map((point) => (
@@ -184,7 +113,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-              Pourquoi choisir Scallab ?
+              {t("why_us.title")}
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -213,17 +142,17 @@ export default function ServicesPage() {
       <section className="py-24 px-6" style={{ backgroundColor: "#FF6B35" }}>
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-4xl font-extrabold text-white mb-4">
-            Tu as une question sur nos services ?
+            {t("cta_section.title")}
           </h2>
           <p className="text-orange-100 text-lg mb-10 leading-relaxed">
-            Réserve une consultation gratuite de 30 minutes avec un expert Scallab.
+            {t("cta_section.subtitle")}
           </p>
           <a
             href="/#contact"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white font-bold text-base transition-all duration-200 hover:bg-orange-50 hover:shadow-xl hover:-translate-y-0.5 active:scale-95"
             style={{ color: "#FF6B35" }}
           >
-            Réserver ma consultation gratuite
+            {t("cta_section.cta")}
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -234,11 +163,11 @@ export default function ServicesPage() {
       {/* FOOTER */}
       <footer className="py-10 px-6" style={{ backgroundColor: "#1a1a2e" }}>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <a href="/" className="text-5xl font-bold tracking-tight font-stencil" style={{ lineHeight: 1 }}>
+          <Link href="/" className="text-5xl font-bold tracking-tight font-stencil" style={{ lineHeight: 1 }}>
             <span className="text-white">Scal</span>
             <span style={{ color: "#FF6B35", fontStyle: "italic" }}>lab</span>
-          </a>
-          <p className="text-gray-500 text-sm">© 2024 Scallab. Tous droits réservés.</p>
+          </Link>
+          <p className="text-gray-500 text-sm">{t("footer.copyright")}</p>
         </div>
       </footer>
     </div>

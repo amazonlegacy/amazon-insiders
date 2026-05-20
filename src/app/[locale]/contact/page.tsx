@@ -1,33 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import Header from "@/components/Header";
-
-// ─── FAQ DATA ─────────────────────────────────────────────────────────────────
-
-const faqs = [
-  {
-    q: "La formation est-elle adaptée aux débutants complets ?",
-    a: "Oui, la formation part de zéro. Aucune expérience Amazon n'est requise. On t'explique chaque étape dans l'ordre.",
-  },
-  {
-    q: "Combien de temps faut-il pour voir des résultats ?",
-    a: "Les premiers résultats concrets arrivent généralement entre 6 et 12 semaines après le lancement du premier produit, en suivant notre méthode.",
-  },
-  {
-    q: "Est-ce que j'ai accès à la formation à vie ?",
-    a: "Oui. Une fois la formation achetée, tu y as accès à vie ainsi qu'à toutes les mises à jour futures sans frais supplémentaires.",
-  },
-  {
-    q: "Comment fonctionne la communauté d'entraide ?",
-    a: "Tu intègres un groupe privé d'élèves et d'experts. Tu peux poser tes questions à tout moment et l'équipe Scallab te répond personnellement.",
-  },
-  {
-    q: "Proposez-vous un accompagnement individuel en plus de la formation ?",
-    a: "Oui, nous proposons des services d'accompagnement personnalisé. Consulte notre page Services ou contacte-nous directement pour en discuter.",
-  },
-];
+import { Link } from "@/i18n/navigation";
 
 const socialLinks = [
   {
@@ -107,6 +83,12 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
 
 export default function ContactPage() {
+  const t = useTranslations("contact");
+
+  const contactItems = t.raw("left.contact_items") as string[];
+  const subjectOptions = t.raw("form.subject_options") as Array<{ value: string; label: string }>;
+  const faqItems = t.raw("faq.items") as Array<{ q: string; a: string }>;
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -117,6 +99,18 @@ export default function ContactPage() {
     e.preventDefault();
     setSent(true);
   }
+
+  const contactIconsMap = [
+    <svg key="email" className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+    </svg>,
+    <svg key="clock" className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>,
+    <svg key="calendar" className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+    </svg>,
+  ];
 
   return (
     <div className="font-sans text-gray-900">
@@ -129,11 +123,11 @@ export default function ContactPage() {
       >
         <div className="max-w-2xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight tracking-tight mb-5">
-            Contacte-nous
+            {t("hero.title")}
           </h1>
           <p className="text-lg md:text-xl text-white/85 leading-relaxed">
-            Une question sur nos services ou la formation ?<br />
-            Notre équipe te répond sous 24h.
+            {t("hero.subtitle")}<br />
+            {t("hero.subtitle2")}
           </p>
         </div>
       </section>
@@ -144,58 +138,32 @@ export default function ContactPage() {
 
           {/* Colonne gauche */}
           <div>
-            <h2 className="text-3xl font-extrabold text-gray-900 mb-4">On est là pour toi</h2>
+            <h2 className="text-3xl font-extrabold text-gray-900 mb-4">{t("left.title")}</h2>
             <p className="text-gray-500 leading-relaxed mb-8">
-              Que tu aies une question sur nos services, la formation ou ton projet Amazon, n'hésite
-              pas à nous écrire. Nous répondons à chaque message personnellement.
+              {t("left.subtitle")}
             </p>
 
             {/* Infos contact */}
             <div className="space-y-4 mb-10">
-              {[
-                {
-                  icon: (
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  ),
-                  text: "contact@amazon-insiders.com",
-                },
-                {
-                  icon: (
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  ),
-                  text: "Réponse sous 24h garantie",
-                },
-                {
-                  icon: (
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                  ),
-                  text: "Consultation gratuite de 30 min disponible",
-                },
-              ].map((item) => (
+              {contactItems.map((item, idx) => (
                 <div
-                  key={item.text}
+                  key={item}
                   className="flex items-center gap-4 bg-white rounded-xl border border-gray-100 shadow-sm px-5 py-4 hover:shadow-md hover:border-[#FF6B35]/20 transition-all duration-200"
                 >
                   <span
                     className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0"
                     style={{ backgroundColor: "#FF6B3515", color: "#FF6B35" }}
                   >
-                    {item.icon}
+                    {contactIconsMap[idx]}
                   </span>
-                  <span className="text-gray-700 text-sm font-medium">{item.text}</span>
+                  <span className="text-gray-700 text-sm font-medium">{item}</span>
                 </div>
               ))}
             </div>
 
             {/* Réseaux sociaux */}
             <div>
-              <p className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4">Nous suivre</p>
+              <p className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4">{t("left.follow_us")}</p>
               <div className="flex gap-3">
                 {socialLinks.map((s) => (
                   <a
@@ -221,30 +189,30 @@ export default function ContactPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Message envoyé !</h3>
-                <p className="text-gray-500 text-sm mb-8">Nous te répondons sous 24h.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{t("success.title")}</h3>
+                <p className="text-gray-500 text-sm mb-8">{t("success.subtitle")}</p>
                 <button
                   onClick={() => { setSent(false); setName(""); setEmail(""); setSubject(""); setMessage(""); }}
                   className="px-6 py-3 rounded-xl text-white font-semibold text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg active:scale-95"
                   style={{ backgroundColor: "#FF6B35" }}
                 >
-                  Envoyer un autre message
+                  {t("success.send_another")}
                 </button>
               </div>
             ) : (
               <>
-                <h3 className="text-xl font-bold text-gray-900 mb-6">Envoie-nous un message</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-6">{t("form.title")}</h3>
                 <form onSubmit={handleSubmit} className="space-y-5">
                   {/* Nom */}
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-                      Prénom et nom
+                      {t("form.name_label")}
                     </label>
                     <input
                       type="text"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
-                      placeholder="Jean Dupont"
+                      placeholder={t("form.name_placeholder")}
                       required
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-900 placeholder-gray-400 text-sm outline-none transition-all duration-200 focus:border-[#FF6B35] focus:ring-2 focus:ring-[#FF6B35]/20"
                     />
@@ -253,13 +221,13 @@ export default function ContactPage() {
                   {/* Email */}
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-                      Adresse email
+                      {t("form.email_label")}
                     </label>
                     <input
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      placeholder="jean@email.com"
+                      placeholder={t("form.email_placeholder")}
                       required
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-900 placeholder-gray-400 text-sm outline-none transition-all duration-200 focus:border-[#FF6B35] focus:ring-2 focus:ring-[#FF6B35]/20"
                     />
@@ -268,7 +236,7 @@ export default function ContactPage() {
                   {/* Sujet */}
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-                      Sujet
+                      {t("form.subject_label")}
                     </label>
                     <select
                       value={subject}
@@ -277,23 +245,22 @@ export default function ContactPage() {
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-900 text-sm outline-none transition-all duration-200 focus:border-[#FF6B35] focus:ring-2 focus:ring-[#FF6B35]/20 bg-white appearance-none"
                       style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236B7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E")`, backgroundRepeat: "no-repeat", backgroundPosition: "right 14px center", backgroundSize: "16px" }}
                     >
-                      <option value="" disabled>Sélectionne un sujet</option>
-                      <option value="services">Renseignement sur les services</option>
-                      <option value="formation">Renseignement sur la formation</option>
-                      <option value="consultation">Demande de consultation gratuite</option>
-                      <option value="autre">Autre</option>
+                      <option value="" disabled>{t("form.subject_placeholder")}</option>
+                      {subjectOptions.map((opt) => (
+                        <option key={opt.value} value={opt.value}>{opt.label}</option>
+                      ))}
                     </select>
                   </div>
 
                   {/* Message */}
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-                      Message
+                      {t("form.message_label")}
                     </label>
                     <textarea
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
-                      placeholder="Décris-nous ton projet ou ta question..."
+                      placeholder={t("form.message_placeholder")}
                       required
                       rows={5}
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-900 placeholder-gray-400 text-sm outline-none transition-all duration-200 focus:border-[#FF6B35] focus:ring-2 focus:ring-[#FF6B35]/20 resize-none"
@@ -306,10 +273,10 @@ export default function ContactPage() {
                     className="w-full py-3.5 rounded-xl text-white font-bold text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg active:scale-[0.98]"
                     style={{ backgroundColor: "#FF6B35" }}
                   >
-                    Envoyer le message
+                    {t("form.submit")}
                   </button>
                   <p className="text-center text-xs text-gray-400 font-medium">
-                    Nous répondons sous 24h · Aucun engagement
+                    {t("form.footer_note")}
                   </p>
                 </form>
               </>
@@ -322,11 +289,11 @@ export default function ContactPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-extrabold text-gray-900 mb-4">Questions fréquentes</h2>
-            <p className="text-gray-500 text-lg">Les réponses aux questions qu'on nous pose le plus souvent.</p>
+            <h2 className="text-4xl font-extrabold text-gray-900 mb-4">{t("faq.title")}</h2>
+            <p className="text-gray-500 text-lg">{t("faq.subtitle")}</p>
           </div>
           <div className="space-y-3">
-            {faqs.map((faq) => (
+            {faqItems.map((faq) => (
               <FaqItem key={faq.q} q={faq.q} a={faq.a} />
             ))}
           </div>
@@ -340,7 +307,7 @@ export default function ContactPage() {
             <span className="text-white">Scal</span>
             <span style={{ color: "#FF6B35", fontStyle: "italic" }}>lab</span>
           </Link>
-          <p className="text-gray-500 text-sm">© 2024 Scallab. Tous droits réservés.</p>
+          <p className="text-gray-500 text-sm">{t("footer.copyright")}</p>
         </div>
       </footer>
     </div>
