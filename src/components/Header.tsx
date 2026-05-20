@@ -19,7 +19,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="text-[38px] font-bold tracking-tight font-stencil h-16 flex items-center" style={{ lineHeight: 1 }}>
           <span className="text-gray-900">Scal</span>
-          <span style={{ color: "#FF6B35" }}>lab</span>
+          <span style={{ color: "#FF6B35", fontStyle: "italic" }}>lab</span>
         </Link>
 
         {/* Navigation */}

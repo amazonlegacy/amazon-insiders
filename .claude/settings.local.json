@@ -18,7 +18,9 @@
       "Bash(node -e \"const s = require\\('./node_modules/stripe/package.json'\\); console.log\\('installed:', s.version\\)\")",
       "Bash(node -e \"const S = require\\('./node_modules/stripe/esm/stripe.esm.node'\\); console.log\\(Object.keys\\(S.Stripe || S\\).filter\\(k => k.toLowerCase\\(\\).includes\\('version'\\) || k.toLowerCase\\(\\).includes\\('api'\\)\\)\\)\")",
       "Bash(git push *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(cd /d D:\\\\amazon-insiders)",
+      "Bash(npm run *)"
     ]
   }
 }
