@@ -13,7 +13,7 @@ const COUNTRY_LOCALE_MAP: Record<string, string> = {
 
 const handleI18nRouting = createMiddleware(routing);
 
-export default function proxy(request: NextRequest) {
+export default function middleware(request: NextRequest) {
   const country = request.headers.get('x-vercel-ip-country') ?? '';
   const geoLocale = COUNTRY_LOCALE_MAP[country.toUpperCase()];
 
