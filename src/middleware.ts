@@ -1,6 +1,6 @@
 import createMiddleware from 'next-intl/middleware';
 import { routing } from './i18n/routing';
-import { NextRequest } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
 const COUNTRY_LOCALE_MAP: Record<string, string> = {
   FR: 'fr', BE: 'fr', MC: 'fr', LU: 'fr', CH: 'fr',
@@ -11,33 +11,30 @@ const COUNTRY_LOCALE_MAP: Record<string, string> = {
   DE: 'de', AT: 'de',
 };
 
-const handleI18nRouting = createMiddleware(routing);
+const intlMiddleware = createMiddleware(routing);
 
 export default function middleware(request: NextRequest) {
-  const country = request.headers.get('x-vercel-ip-country') ?? '';
-  const geoLocale = COUNTRY_LOCALE_MAP[country.toUpperCase()];
+  const { pathname } = request.nextUrl;
+  const locales = routing.locales as readonly string[];
+  const hasLocale = locales.some(
+    (l) => pathname.startsWith(`/${l}/`) || pathname === `/${l}`
+  );
 
-  if (geoLocale) {
-    const url = request.nextUrl.clone();
-    const pathname = url.pathname;
-    const locales = routing.locales as readonly string[];
-    const hasLocale = locales.some(
-      (l) => pathname.startsWith(`/${l}/`) || pathname === `/${l}`
-    );
-
-    if (!hasLocale) {
-      // Rewrite the request with the geo-detected locale prefix
-      const newUrl = request.nextUrl.clone();
-      newUrl.pathname = `/${geoLocale}${pathname === '/' ? '' : pathname}`;
-      // Create a new request with the locale in the path for next-intl to pick up
-      const newRequest = new NextRequest(newUrl, request);
-      return handleI18nRouting(newRequest);
+  // If no locale prefix yet, check Vercel geo header and redirect
+  if (!hasLocale) {
+    const country = (request.headers.get('x-vercel-ip-country') ?? '').toUpperCase();
+    const geoLocale = COUNTRY_LOCALE_MAP[country];
+    if (geoLocale) {
+      const url = request.nextUrl.clone();
+      url.pathname = `/${geoLocale}${pathname === '/' ? '' : pathname}`;
+      return NextResponse.redirect(url);
     }
   }
 
-  return handleI18nRouting(request);
+  // Let next-intl handle locale detection / routing for everything else
+  return intlMiddleware(request);
 }
 
 export const config = {
-  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)'],
 };
