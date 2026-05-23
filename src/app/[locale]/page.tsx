@@ -224,7 +224,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="py-10 px-6" style={{ backgroundColor: "#1a1a2e" }}>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-5xl font-bold tracking-tight font-stencil" style={{ lineHeight: 1 }}>
+          <div className="text-5xl font-bold tracking-tight" style={{ lineHeight: 1 }}>
             <span className="text-white">SCAL</span>
             <span style={{ color: "#FF6B35" }}>lab</span>
           </div>

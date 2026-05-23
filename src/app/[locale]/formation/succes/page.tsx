@@ -11,7 +11,7 @@ export default async function SuccesPage() {
       style={{ background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)" }}
     >
       {/* Logo */}
-      <Link href="/" className="text-2xl font-bold tracking-tight mb-10 font-stencil">
+      <Link href="/" className="text-2xl font-bold tracking-tight mb-10">
         <span className="text-white">SCAL</span>
         <span style={{ color: "#FF6B35" }}>lab</span>
       </Link>
