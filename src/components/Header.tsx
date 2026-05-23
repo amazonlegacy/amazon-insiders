@@ -18,7 +18,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-[38px] font-bold tracking-tight font-stencil h-16 flex items-center" style={{ lineHeight: 1 }}>
+        <Link href="/" className="text-[38px] font-bold tracking-tight font-stencil h-16 flex items-center md:flex-none flex-1 justify-center md:justify-start" style={{ lineHeight: 1 }}>
           <span className="text-gray-900">Scal</span>
           <span style={{ color: "#FF6B35", fontStyle: "italic" }}>lab</span>
         </Link>
