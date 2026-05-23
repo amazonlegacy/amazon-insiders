@@ -13,7 +13,7 @@ export default async function SuccesPage() {
       {/* Logo */}
       <Link href="/" className="text-2xl font-bold tracking-tight mb-10 font-stencil">
         <span className="text-white">Scal</span>
-        <span style={{ color: "#FF6B35", fontStyle: "italic" }}>lab</span>
+        <span style={{ color: "#FF6B35" }}>lab</span>
       </Link>
 
       {/* Card */}

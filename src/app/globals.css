@@ -38,7 +38,15 @@ body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "IdealistSans";
+  src: url("/fonts/idealistsans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .font-stencil {
-  font-family: "Furore", var(--font-stencil), "Bebas Neue", sans-serif;
+  font-family: "IdealistSans", sans-serif;
   letter-spacing: 0.04em;
 }

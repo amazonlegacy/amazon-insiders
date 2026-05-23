@@ -305,7 +305,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <Link href="/" className="text-5xl font-bold tracking-tight font-stencil" style={{ lineHeight: 1 }}>
             <span className="text-white">Scal</span>
-            <span style={{ color: "#FF6B35", fontStyle: "italic" }}>lab</span>
+            <span style={{ color: "#FF6B35" }}>lab</span>
           </Link>
           <p className="text-gray-500 text-sm">{t("footer.copyright")}</p>
         </div>
