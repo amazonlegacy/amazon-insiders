@@ -30,7 +30,15 @@ body {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: "Furore";
+  src: url("/fonts/Furore.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .font-stencil {
-  font-family: var(--font-stencil), "Bebas Neue", sans-serif;
+  font-family: "Furore", var(--font-stencil), "Bebas Neue", sans-serif;
   letter-spacing: 0.04em;
 }
