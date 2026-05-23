@@ -42,7 +42,3 @@ body {
   font-family: "Furore", var(--font-stencil), "Bebas Neue", sans-serif;
   letter-spacing: 0.04em;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Furore", sans-serif;
-}
