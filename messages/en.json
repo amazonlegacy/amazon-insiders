@@ -29,6 +29,7 @@
     "services": {
       "title": "Our services",
       "subtitle": "Everything you need to dominate Amazon",
+      "cta": "Our pricing",
       "items": [
         {
           "icon": "📦",
