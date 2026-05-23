@@ -99,7 +99,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/services"
-              className="inline-flex items-center px-8 py-4 rounded-xl text-white font-semibold text-base transition-all duration-200 hover:opacity-90 hover:shadow-xl hover:-translate-y-0.5 active:scale-95"
+              className="inline-flex items-center px-12 py-5 rounded-xl text-white font-bold text-lg md:text-xl transition-all duration-200 hover:opacity-90 hover:shadow-xl hover:-translate-y-0.5 active:scale-95"
               style={{ backgroundColor: "#FF6B35" }}
             >
               {t("services.cta")}
