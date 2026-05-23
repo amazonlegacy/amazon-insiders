@@ -14,7 +14,7 @@ export default function Home() {
   const testimonials = t.raw("testimonials.items") as Array<{ initials: string; name: string; text: string }>;
 
   return (
-    <div className="font-sans text-gray-900 overflow-x-hidden">
+    <div className="font-sans text-gray-900">
       <Header />
 
       {/* HERO */}
@@ -54,17 +54,17 @@ export default function Home() {
 
       {/* RÉASSURANCE */}
       <section className="py-16 px-6 bg-white border-y border-gray-200">
-        <div className="grid grid-cols-3 gap-4 max-w-3xl mx-auto">
+        <div className="flex flex-col sm:grid sm:grid-cols-3 gap-8 sm:gap-6 max-w-3xl mx-auto">
           {[
             { value: t("stats.clients_value"), label: t("stats.clients_label") },
             { value: t("stats.revenue_value"), label: t("stats.revenue_label") },
             { value: t("stats.satisfaction_value"), label: t("stats.satisfaction_label") },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight" style={{ color: "#FF6B35" }}>
+          ].map((stat, i) => (
+            <div key={stat.label} className={`text-center ${i < 2 ? "sm:border-r sm:border-gray-200" : ""}`}>
+              <div className="text-5xl md:text-6xl font-black tracking-tight" style={{ color: "#FF6B35" }}>
                 {stat.value}
               </div>
-              <div className="text-xs sm:text-base md:text-lg text-gray-600 mt-2 font-semibold">{stat.label}</div>
+              <div className="text-base md:text-lg text-gray-600 mt-2 font-semibold">{stat.label}</div>
             </div>
           ))}
         </div>
